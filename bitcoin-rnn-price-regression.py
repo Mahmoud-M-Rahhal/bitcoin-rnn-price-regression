@@ -9,7 +9,7 @@ from sklearn.metrics import r2_score
 torch.manual_seed(42)
 
 # Load dataset
-coin_data = pd.read_csv(r"coin_Bitcoin.csv")
+coin_data = pd.read_csv("coin_Bitcoin.csv")
 x = coin_data[["High", "Low", "Open"]]
 y = coin_data[["Close"]]
 
